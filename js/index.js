@@ -27,9 +27,9 @@ const initialCards = [
   }
 ];
 
-const openPop = document.querySelector('.profile__edit-button');
-const closePop = document.querySelector('.pop-up__close');
-const popUp = document.querySelector('.pop-up');
+const openPop = document.querySelector('#profile-edit-button');
+const closePop = document.querySelector('#pop-up-profile-button-close');
+const popUp = document.querySelector('#pop-up-profile');
 
 // const togglePopup = popup => () => popup.classList.toggle("popup_opened");
 
@@ -58,15 +58,18 @@ const profileName = document.querySelector('.profile__name');
 
 const profileDiscription = document.querySelector('.profile__discription');
 
-const form = document.querySelector('.pop-up__form');
+const profileForm = document.querySelector('#profile-form');
+const imageForm = document.querySelector('#image-form');
 
-const userName = form.querySelector('.pop-up__input_type_user');
+const userName = profileForm.querySelector('.pop-up__input_type_user');
 
-const description = form.querySelector('.pop-up__input_type_descr');
+const description = profileForm.querySelector('.pop-up__input_type_descr');
 
-const submitButton = document.querySelector('.pop-up__button');
+const submitButton = document.querySelector('#pop-up-profile-button-save');
 
-const popImage = document.querySelector('.pop-up-image');
+const popImage = document.querySelector('#pop-up-image');
+const closePopImage = document.querySelector('#pop-up-image-button-close');
+
 console.log(popImage)
 // создать эл pop
 // get element image
@@ -79,11 +82,16 @@ console.log(popImage)
     popUp.classList.remove('pop-up_opened');
 }
 
-form.addEventListener('submit', addUser);
+function addImage(e) {
+  alert('TODO: add image');
+}
+
+profileForm.addEventListener('submit', addUser);
+imageForm.addEventListener('submit', addImage);
 
 //adding places
 
-const popOpenPlace = document.querySelector('.profile__add-button');
+const popOpenPlace = document.querySelector('#image-button-add');
 
 // popOpenPlace.addEventListener('click', function(e){
 //     e.preventDefault();
@@ -92,12 +100,14 @@ const popOpenPlace = document.querySelector('.profile__add-button');
 popOpenPlace.addEventListener('click', function(e){
   e.preventDefault();
   popImage.classList.add('pop-up_opened');
- 
-  
 })
-closePop.addEventListener('click', () => {
+
+closePopImage.addEventListener('click', () => {
+    popImage.classList.remove('pop-up_opened');
+})
+/*closePop.addEventListener('click', () => {
   popImage.classList.remove('pop-up_opened');
-})
+})*/
 
 
 
