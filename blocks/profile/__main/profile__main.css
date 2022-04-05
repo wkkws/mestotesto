@@ -1,0 +1,10 @@
+.profile__main {
+    display: flex;
+    margin-right: 20px;
+}
+@media screen and (max-width: 600px) {   
+    .profile__main{ 
+        flex-direction: column;
+     
+    }
+}

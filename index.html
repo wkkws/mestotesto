@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mesto</title>
+  
+  <link rel="stylesheet" href="./styles/index.css">
+</head>
+
+<body class="all">
+
+  <header class="header">
+    <img src="./images/LogoMesto.svg" alt="Место_логотип" class="header__logo">
+    
+    
+  </header>
+
+  <section class="profile">
+
+
+
+
+
+    <div class="profile__main">
+      <img src="./images/kusto.jpg" alt="аватар" class="profile__image">
+      <div class="profile__column">
+        <div class="profile__info">
+          <h1 class="profile__name">Жак-Ив Кусто</h1>
+          <button type="button" class="profile__edit-button"></button>
+        </div>
+        <p class="profile__discription">Исследователь океана</p>
+      </div>
+    </div>
+
+
+
+
+
+
+    <button type="button" class="profile__add-button">
+      <img class="profile__inside-plus" src="./images/plus.png" alt="плюс">
+    </button>
+      
+      
+    
+
+
+  </section>
+
+
+<!-- 
+  <section class="elements">
+    
+    <figure class="elements__envelop">
+      
+      <img src="./images/ekateringof.jpg" alt="парка_на_закате" class="elements__image">
+      <button class="elements__can"></button>
+      <figcaption class="elements__group">
+        <h2 class="elements__title">Екатерингофский парк</h2>
+        <button type="button" class="elements__like"></button>
+
+      </figcaption>
+    </figure>
+    <figure class="elements__envelop">
+      <img src="./images/solnche.jpg" alt="Солнце" class="elements__image">
+      <button class="elements__can"></button>
+      <figcaption class="elements__group">
+        <h2 class="elements__title">Вид из окна</h2>
+        <button type="button" class="elements__like"></button>
+      </figcaption>
+    </figure>
+    <figure class="elements__envelop">
+      <img src="./images/kavgolovo.jpg" alt="Кавголово" class="elements__image">
+      <button class="elements__can"></button>
+      <figcaption class="elements__group">
+        <h2 class="elements__title">Кавголово</h2>
+        <button type="button" class="elements__like"></button>
+      </figcaption>
+    </figure>
+    <figure class="elements__envelop">
+      <img src="./images/krasnoarmeiskaya.jpg" alt="Вид_из_окна" class="elements__image">
+      <button class="elements__can"></button>
+      <figcaption class="elements__group">
+        <h2 class="elements__title">12-Красноармейская</h2>
+        <button type="button" class="elements__like"></button>
+      </figcaption>
+    </figure>
+    <figure class="elements__envelop">
+      <img src="./images/obvodnyi.jpg" alt="Обводный_канал" class="elements__image">
+      <button class="elements__can"></button>
+      <figcaption class="elements__group">
+        <h2 class="elements__title">Обводный</h2>
+        <button type="button" class="elements__like"></button>
+      </figcaption>
+    </figure>
+    <figure class="elements__envelop">
+      <img src="./images/vereiska.jpg" alt="городской_пейзаж" class="elements__image">
+      <button class="elements__can"></button>
+      <figcaption class="elements__group">
+        <h2 class="elements__title">Вечерний Питер</h2>
+        <button type="button" class="elements__like"></button>
+      </figcaption>
+    </figure>
+</section> -->
+
+<!--TEMPLATE-->
+
+<template class="elements">
+    
+  <figure class="elements__envelop">
+    
+    <img src="." alt="" class="elements__image">
+    <button class="elements__can"></button>
+    <figcaption class="elements__group">
+      <h2 class="elements__title"></h2>
+      <button type="button" class="elements__like"></button>
+    </figcaption>
+  </figure>
+</template> 
+
+<section class="onPage"></section>
+
+  <footer class="footer">
+
+
+    <p class="footer__copyright">&#169;2022 Mesto Russia</p>
+  </footer>
+
+    <!-- popup user-->
+
+    <div class="pop-up">
+      <div class="pop-up__container">
+          <h2 class="pop-up__title">Редактировать профиль</h2>
+          <form class="pop-up__form" name="profile-form">
+            
+              <input class="pop-up__input pop-up__input_type_user" type="text" placeholder="name" value="">
+           
+            
+              <input class="pop-up__input pop-up__input_type_descr" type="text" placeholder="description" value="">
+            
+            <button type="submit" class="pop-up__button">Сохранить</button>
+            <button type="button" class="pop-up__close"></button>
+          </form>        
+      </div>
+    </div>
+    <!-- popup elements__image-->
+    <div class="pop-up-image">
+      <div class="pop-up__container">
+          <h2 class="pop-up__title">Новое место</h2>
+          <form class="pop-up__form" name="profile-form">
+            
+              <input class="pop-up__input pop-up__input_type_user" type="text" placeholder="Название" value="">
+          
+            
+              <input class="pop-up__input pop-up__input_type_descr" type="text" placeholder="Ссылка на картинку" value="">
+            
+            <button type="submit" class="pop-up__button">Создать</button>
+            <button type="button" class="pop-up__close"></button>
+          </form>        
+      </div>
+    </div>
+
+  <script src="./js/index.js"></script>
+</body>
+
+</html>

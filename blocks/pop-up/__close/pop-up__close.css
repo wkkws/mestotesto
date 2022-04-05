@@ -1,0 +1,43 @@
+.pop-up__close {
+    position: absolute;
+    top: -20px;
+    right: 0px;
+    border: none;
+    background-color: transparent;
+}
+
+.pop-up__close:before, .pop-up__close:after {
+    content: "";
+    width: 32px;
+    height: 3.5px;
+    background: #fff;
+    
+    position: absolute;
+    cursor: pointer;
+    z-index: 99;
+}
+.pop-up__close:before {
+    transform: rotate(45deg);
+
+}
+.pop-up__close:after {
+    transform: rotate(-45deg);
+
+}
+
+.pop-up__close:hover {
+        opacity: .7;
+    }
+    
+@media screen and (max-width: 600px) {   
+    .pop-up__close:before, .pop-up__close:after {
+            right: 0;
+            width: 20px;
+            height: 2px;
+
+        }
+    }
+
+
+   
+   
